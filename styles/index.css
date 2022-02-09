@@ -1,0 +1,81 @@
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    min-height: 100vh;
+    background-color: blue;
+}
+
+nav { /* Does it makes sense to do like this even if margin-top and top are the same? */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 5px 20px;
+    position: sticky;
+    top: 20px;
+    background-color: #FFF;
+}
+
+/* .nav-placement {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.menu-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* background-color: yellow; */
+    align-items: baseline;
+}
+
+.menu-div {
+    padding: 10px;
+    margin-right: 20px;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.menu {
+    margin: 10px;
+    /* background-color: red; */
+    color: #2F281E;
+    text-decoration: none;
+}
+
+.btn {
+    height: 46px;
+    width: 102px;
+    margin-right: 14px;
+    border-radius: 5px;
+    font-family: sans-serif; /* OBS add the right font!!!*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px
+}
+
+.sign-in {
+    border: 2px solid #BCD0E5;
+    background-color: #FFF;
+    color: #173A56;
+}
+
+.sign-up { /* default black border? Looks like there is a shadow to the button?*/
+    border: 2px solid #FF9900;
+    background-color: #FF9900;
+    color: #FFF;
+}
+
+main {
+    background-color: aliceblue;
+    min-height: 100vh;
+}
