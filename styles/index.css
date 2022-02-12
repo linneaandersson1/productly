@@ -1,6 +1,36 @@
 body {
     background-color: antiquewhite;
     font-family: sans-serif;
+    font-style: normal;
+    color: #2F281E;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: -6px;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px; 
+    margin-bottom: -5px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: -8px;
 }
 
 nav { /* Does it makes sense to do like this even if margin-top and top are the same? */
@@ -42,7 +72,7 @@ nav { /* Does it makes sense to do like this even if margin-top and top are the 
 .menu {
     margin: 10px;
     /* background-color: red; */
-    color: #2F281E;
+    /* color: #2F281E; */
     text-decoration: none;
 }
 
@@ -85,7 +115,7 @@ header {
 }
 
 .heading {
-    color: #2F281E;
+    /* color: #2F281E; */
     margin-bottom: 30px;
     /* padding: 20px; */
     font-style: normal;
@@ -133,14 +163,99 @@ main {
     min-height: 100vh;
 }
 
-h2 {
+.feature { /* FEATURE SECTION - button does not react to this code, do not know why */
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
 
+.feature-heading {
+    max-width: 500px;
+    /* background-color: yellow; */
+}
+
+/* h2 heading */
+
+.feature-container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.feature-container-box {
+    /* background-color: aqua; */
+    width: 240px;
+    height: 204px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    /* margin: 0, 20px;      - does not work/isn't needed?*/
+    /* padding: 10px; */
+}
+
+.feature-icon {
+    margin-bottom: -6px;
+}
+
+/* h5 heading */
+
+/* .feature-paragraph {
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+} */
+/*this div solved the issue with the button not wanting to be centered*/
+/* .feature-btn { 
+    background-color: yellow;
+    margin-top: 34px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+} */
 
-    color: #2F281E;
+.sign-up-caps { /* Not in center */
+    background-color: #FF9900;
+    color: #FFF;
+    border: 2px solid #FF9900;
+    width: 175px;
+    height: 53px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
 
+.effortless-validation { /* EFORTLESS VALIDATION SECTION */
+    background-color: #544837;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .validation-container {
+    background-color: #FF9900;
+    display: flex;
+    flex-direction: row;
+} */
+
+.validation-content {
+    /* display: flex;
+    flex-direction: column; */
+    max-height: 530px;
+    max-width: 500px;
+    text-align: left;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.design-professionals {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.chat-phone {
+    margin-left: 50px;
 }
