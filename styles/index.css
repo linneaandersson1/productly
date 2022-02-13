@@ -1,5 +1,4 @@
 body {
-    background-color: antiquewhite;
     font-family: sans-serif;
     font-style: normal;
     color: #2F281E;
@@ -13,10 +12,16 @@ h2 {
     margin-bottom: 54px;
 }
 
-h5 {
+h4 {
     font-weight: 600;
     font-size: 22px;
     margin-bottom: -6px;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px; 
 }
 
 h6 {
@@ -38,8 +43,9 @@ nav { /* Does it makes sense to do like this even if margin-top and top are the 
     justify-content: space-around;
     flex-wrap: nowrap;
     padding: 5px 20px;
+    margin-top: 20px;
     position: sticky;
-    top: 20px;
+    top: 0px;
     background-color: #FFF;
 }
 
@@ -87,6 +93,14 @@ nav { /* Does it makes sense to do like this even if margin-top and top are the 
     line-height: 24px
 }
 
+/* button {
+    transition-duration: 0.4s;
+} */
+
+button:hover {
+    transform: scale(1.2);
+}
+
 .sign-in {
     border: 2px solid #BCD0E5;
     background-color: #FFF;
@@ -100,7 +114,7 @@ nav { /* Does it makes sense to do like this even if margin-top and top are the 
 }
 
 header {
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #FFF;
     display: flex;
     justify-content: center;
@@ -154,12 +168,17 @@ header {
     height: 53px;
 }
 
+.play-icon {
+    margin-right: 6px;
+    /* margin-top: 10px; */
+    margin-bottom: -3px;
+}
+
 .happy-people {
     margin: 0px, 20px;
 }
 
 main {
-    background-color: aliceblue;
     min-height: 100vh;
 }
 
@@ -226,8 +245,7 @@ main {
     margin-bottom: 90px;
 }
 
-.effortless-validation { /* EFORTLESS VALIDATION SECTION */
-    background-color: #544837;
+.main-container { /* EFORTLESS VALIDATION SECTION */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -240,14 +258,19 @@ main {
     flex-direction: row;
 } */
 
-.validation-content {
+.main-content {
     /* display: flex;
     flex-direction: column; */
     max-height: 530px;
     max-width: 500px;
     text-align: left;
     margin-right: 40px;
+    margin-left: 40px;
     padding: 10px;
+}
+
+.phone-img, .planning-img {
+    margin-left: 50px;
 }
 
 .design-professionals {
@@ -256,6 +279,82 @@ main {
     margin-bottom: -5px;
 }
 
-.chat-phone {
-    margin-left: 50px;
+.product-managers {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: -5px;
 }
+
+.product-managers-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.product-managers-paragraph {
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.checkboxes-content {
+    margin-top: 6px;
+}
+
+.computer-img {
+    margin-right: 50px;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grey-line  {
+    background: rgba(188, 208, 229, 0.496913);
+    width: 1109px;
+    height: 1px;
+    margin-bottom: 100px;
+}
+
+.footer-container {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.number-container {
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.number-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+    color: #BCD0E5;
+    margin: 10px 128px 10px 15px;
+}
+
+.sign-up-now {
+    background-color: #FF9900;
+    color: #FFF;
+    border: 2px solid #FF9900;
+    width: 131px;
+    height: 39px;
+}
+
+/* .footer-logo, .footer-menu, .footer-form {
+    margin-left: 40px;
+} */
